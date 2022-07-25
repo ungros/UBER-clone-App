@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		30421A97288B238C00CFF01A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30421A96288B238C00CFF01A /* AppDelegate.swift */; };
 		30421A99288B238C00CFF01A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30421A98288B238C00CFF01A /* SceneDelegate.swift */; };
-		30421A9B288B238C00CFF01A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30421A9A288B238C00CFF01A /* ViewController.swift */; };
-		30421A9E288B238C00CFF01A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30421A9C288B238C00CFF01A /* Main.storyboard */; };
 		30421AA0288B238D00CFF01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30421A9F288B238D00CFF01A /* Assets.xcassets */; };
 		30421AA3288B238D00CFF01A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30421AA1288B238D00CFF01A /* LaunchScreen.storyboard */; };
+		30421AB2288B248D00CFF01A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30421AB1288B248D00CFF01A /* LoginController.swift */; };
+		3044FE71288E799700B5C9EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044FE70288E799700B5C9EE /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30421A93288B238C00CFF01A /* UBER clone App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UBER clone App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30421A96288B238C00CFF01A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30421A98288B238C00CFF01A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30421A9A288B238C00CFF01A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30421A9D288B238C00CFF01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30421A9F288B238D00CFF01A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30421AA2288B238D00CFF01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30421AA4288B238D00CFF01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30421AB1288B248D00CFF01A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		3044FE70288E799700B5C9EE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		30421A95288B238C00CFF01A /* UBER clone App */ = {
 			isa = PBXGroup;
 			children = (
+				30421AB0288B23C700CFF01A /* Model */,
+				30421AAF288B23C300CFF01A /* Views */,
+				30421AAE288B23C000CFF01A /* Controller */,
+				30421AAB288B23B600CFF01A /* Service */,
+				30421AAA288B23B100CFF01A /* Utils */,
 				30421A96288B238C00CFF01A /* AppDelegate.swift */,
 				30421A98288B238C00CFF01A /* SceneDelegate.swift */,
-				30421A9A288B238C00CFF01A /* ViewController.swift */,
-				30421A9C288B238C00CFF01A /* Main.storyboard */,
 				30421A9F288B238D00CFF01A /* Assets.xcassets */,
 				30421AA1288B238D00CFF01A /* LaunchScreen.storyboard */,
 				30421AA4288B238D00CFF01A /* Info.plist */,
 			);
 			path = "UBER clone App";
+			sourceTree = "<group>";
+		};
+		30421AAA288B23B100CFF01A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3044FE70288E799700B5C9EE /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		30421AAB288B23B600CFF01A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		30421AAE288B23C000CFF01A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				30421AB1288B248D00CFF01A /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		30421AAF288B23C300CFF01A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30421AB0288B23C700CFF01A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +167,6 @@
 			files = (
 				30421AA3288B238D00CFF01A /* LaunchScreen.storyboard in Resources */,
 				30421AA0288B238D00CFF01A /* Assets.xcassets in Resources */,
-				30421A9E288B238C00CFF01A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30421A9B288B238C00CFF01A /* ViewController.swift in Sources */,
 				30421A97288B238C00CFF01A /* AppDelegate.swift in Sources */,
+				30421AB2288B248D00CFF01A /* LoginController.swift in Sources */,
 				30421A99288B238C00CFF01A /* SceneDelegate.swift in Sources */,
+				3044FE71288E799700B5C9EE /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		30421A9C288B238C00CFF01A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30421A9D288B238C00CFF01A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30421AA1288B238D00CFF01A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +323,6 @@
 				INFOPLIST_FILE = "UBER clone App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +349,6 @@
 				INFOPLIST_FILE = "UBER clone App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
