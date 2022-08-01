@@ -12,7 +12,8 @@
 		30421AA0288B238D00CFF01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30421A9F288B238D00CFF01A /* Assets.xcassets */; };
 		30421AA3288B238D00CFF01A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30421AA1288B238D00CFF01A /* LaunchScreen.storyboard */; };
 		30421AB2288B248D00CFF01A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30421AB1288B248D00CFF01A /* LoginController.swift */; };
-		3044FE71288E799700B5C9EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044FE70288E799700B5C9EE /* Extensions.swift */; };
+		3044FE71288E799700B5C9EE /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044FE70288E799700B5C9EE /* Constraints.swift */; };
+		3075965C2896DED000F5A75B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075965B2896DED000F5A75B /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		30421AA2288B238D00CFF01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30421AA4288B238D00CFF01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30421AB1288B248D00CFF01A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		3044FE70288E799700B5C9EE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3044FE70288E799700B5C9EE /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		3075965B2896DED000F5A75B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,7 @@
 		30421AAA288B23B100CFF01A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3044FE70288E799700B5C9EE /* Extensions.swift */,
+				3075965D2896DEE100F5A75B /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -105,6 +107,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3075965D2896DEE100F5A75B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3075965B2896DED000F5A75B /* TextField.swift */,
+				3044FE70288E799700B5C9EE /* Constraints.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +191,8 @@
 				30421A97288B238C00CFF01A /* AppDelegate.swift in Sources */,
 				30421AB2288B248D00CFF01A /* LoginController.swift in Sources */,
 				30421A99288B238C00CFF01A /* SceneDelegate.swift in Sources */,
-				3044FE71288E799700B5C9EE /* Extensions.swift in Sources */,
+				3075965C2896DED000F5A75B /* TextField.swift in Sources */,
+				3044FE71288E799700B5C9EE /* Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
