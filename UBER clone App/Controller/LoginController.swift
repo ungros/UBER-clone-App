@@ -38,9 +38,32 @@ class LoginController: UIViewController {
         return UITextField().textField(withPlaceholder: "Email",
                                        isSecureTextEntry: false)
     }()
+    
     private let passwordTextField: UITextField = {
         return UITextField().textField(withPlaceholder: "Password",
                                        isSecureTextEntry: true)
+    }()
+    
+    private let loginButton: UIButton = {
+       let button = UIButton()
+        button.setTitle("Log In", for: .normal)
+        button.setTitleColor(UIColor(white: 1, alpha: 0.5), for: .normal)
+        button.backgroundColor = .mainBlueTint
+        button.layer.cornerRadius = 5
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        return button
+    }()
+    
+    private let donthaveAccountButton: UIButton = {
+        let button = UIButton(type: .system)
+        let attributedTitle = NSMutableAttributedString(string: "Don't have an account?", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        attributedTitle.append(NSAttributedString(string: " Sign Up", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.mainBlueTint]))
+        // button.addTarget(self, action #selector(handShowSignUp), for: .touchUpInside)
+        
+        button.setAttributedTitle(attributedTitle, for: .normal)
+        
+        return button
     }()
     
     
@@ -49,13 +72,15 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        view.backgroundColor = .backgroundColor
+        
         view.addSubview(titleLable)
         titleLable.anchor(top: view.safeAreaLayoutGuide.topAnchor)
         titleLable.centerX(inView: view)
         
        
         
-        let stack = UIStackView(arrangedSubviews: [emailConteinerView, passwordConteinerView])
+        let stack = UIStackView(arrangedSubviews: [emailConteinerView, passwordConteinerView, loginButton])
         stack.axis = .vertical
         stack.distribution = .fillEqually
         stack.spacing = 16
@@ -63,8 +88,9 @@ class LoginController: UIViewController {
         view.addSubview(stack)
         stack.anchor(top: titleLable.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 40, paddingLeft: 16,  paddingRight: 16)
         
-        view.backgroundColor = UIColor.init(red: 25/255, green: 25/255, blue: 25/255, alpha: 1)
-        
+        view.addSubview(donthaveAccountButton)
+        donthaveAccountButton.centerX(inView: view)
+        donthaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, height: 32)
         
     }
 
