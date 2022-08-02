@@ -15,6 +15,7 @@
 		3044FE71288E799700B5C9EE /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044FE70288E799700B5C9EE /* Constraints.swift */; };
 		3075965C2896DED000F5A75B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075965B2896DED000F5A75B /* TextField.swift */; };
 		3075965F2897D2A200F5A75B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075965E2897D2A200F5A75B /* UIColor.swift */; };
+		3075966128983A6D00F5A75B /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075966028983A6D00F5A75B /* SignUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3044FE70288E799700B5C9EE /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		3075965B2896DED000F5A75B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		3075965E2897D2A200F5A75B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3075966028983A6D00F5A75B /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				30421AB1288B248D00CFF01A /* LoginController.swift */,
+				3075966028983A6D00F5A75B /* SignUpController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				30421A97288B238C00CFF01A /* AppDelegate.swift in Sources */,
 				3075965F2897D2A200F5A75B /* UIColor.swift in Sources */,
+				3075966128983A6D00F5A75B /* SignUpController.swift in Sources */,
 				30421AB2288B248D00CFF01A /* LoginController.swift in Sources */,
 				30421A99288B238C00CFF01A /* SceneDelegate.swift in Sources */,
 				3075965C2896DED000F5A75B /* TextField.swift in Sources */,
