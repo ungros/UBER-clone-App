@@ -44,13 +44,9 @@ class LoginController: UIViewController {
                                        isSecureTextEntry: true)
     }()
     
-    private let loginButton: UIButton = {
-       let button = UIButton()
+    private let loginButton: AuthButton = {
+        let button = AuthButton(type: .system)
         button.setTitle("Log In", for: .normal)
-        button.setTitleColor(UIColor(white: 1, alpha: 0.5), for: .normal)
-        button.backgroundColor = .mainBlueTint
-        button.layer.cornerRadius = 5
-        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         return button
     }()
@@ -58,9 +54,9 @@ class LoginController: UIViewController {
     private let donthaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
         let attributedTitle = NSMutableAttributedString(string: "Don't have an account?", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.lightGray])
-        attributedTitle.append(NSAttributedString(string: " Sign Up", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.mainBlueTint]))
+        attributedTitle.append(NSAttributedString(string: " Sign Up.", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.mainBlueTint]))
         
-        // button.addTarget(self, action #selector(handShowSignUp), for: .touchUpInside)
+        // BUTTON ACTION
         
         button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
         
@@ -81,9 +77,7 @@ class LoginController: UIViewController {
     //MARK: - Selectors
     
     @objc func handleShowSignUp() {
-       
-        print("Attempt to push controller...")
-        
+   
         let controller = SignUpController()
         navigationController?.pushViewController(controller, animated: true)
     }
@@ -100,7 +94,8 @@ class LoginController: UIViewController {
         
         let stack = UIStackView(arrangedSubviews: [emailConteinerView,
                                                    passwordConteinerView,
-                                                   loginButton])
+                                                   loginButton,
+                                                  ])
         stack.axis = .vertical
         stack.distribution = .fillEqually
         stack.spacing = 16
